@@ -59,11 +59,18 @@ This is synthetic data, so it is cleaner than real sensor logs would be, and the
 a little because of that. On real equipment I would expect noisier readings and drift over time, and I
 would validate on a time-based split rather than a random one so the test set is genuinely "the future".
 
+## Live demo
+
+`app.py` is a small Streamlit app that trains the model on load (same choices as the
+notebook) and lets you move the sensor readings to see the failure probability. Run it with
+`streamlit run app.py`, or deploy it free on Streamlit Community Cloud straight from this repo.
+
 ## Running it
 
 ```
 pip install -r requirements.txt
-jupyter notebook analysis.ipynb
+jupyter notebook analysis.ipynb   # the full analysis
+streamlit run app.py              # the interactive demo
 ```
 
 Data source: AI4I 2020 Predictive Maintenance Dataset, UCI Machine Learning Repository.
