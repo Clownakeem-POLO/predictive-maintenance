@@ -1,5 +1,7 @@
 # Predictive maintenance on the AI4I 2020 dataset
 
+**Live demo:** https://clownakeem-predictive-maintenance.streamlit.app
+
 Predicting machine failure from sensor readings. I come from a mechanical background, so this is a
 problem I find genuinely interesting: given a few live readings off a machine (temperatures, rotational
 speed, torque, tool wear), can you flag that it is about to fail before it does?
